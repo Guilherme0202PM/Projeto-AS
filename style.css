@@ -1,8 +1,9 @@
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
     background: linear-gradient(to bottom, #040248, #3a34ef);
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3 {
@@ -15,39 +16,63 @@ p {
     padding: 5px;
 }
 
-.container {
+.header-container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #040248;
-    height: auto;
-    margin: 0 auto;
-    padding: 2% 2%;
-    border-radius: 10px;
+    padding: 10px 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
     top: 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    left: 0;
+    z-index: 1000;
 }
 
-.telaLogin {
-  background-color: white;
-  color: #333;
-
-  max-width: 300px;
-  margin: 0 auto;
-  margin-top: 50px;
-  padding: 40px 50px;
-
-  border: 3px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.hlogo img {
+    height: 70px;
 }
 
-.listaProgramas{
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    border: 2px solid;
+    border-image: linear-gradient(to top, #ffffff, #ffffff00, #ffffff00) 1;
+}
+
+.caixa-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pesquisa {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 100px; 
+}
+
+.listaProgramas {
     background-color: rgb(131, 10, 187);
-    padding: 10px 10px;
+    padding: 10px;
     border: 10px solid #ed57d7;
     border-radius: 5px;
     display: flex;
@@ -55,20 +80,13 @@ p {
 }
 
 .listaProgramas:hover {
-    background-color:  rgb(194, 61, 172);
-
+    background-color: rgb(194, 61, 172);
 }
 
 .programaItem {
     display: flex; 
     align-items: center; 
     gap: 10px; 
-}
-
-.gridContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
 }
 
 a {
