@@ -97,3 +97,33 @@ a:hover {
     border: 2px solid;
     border-image: linear-gradient(to top , #ffffff, #ffffff00, #ffffff00) 1;
 }
+
+.footer-container {
+    background-color: #040248;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
