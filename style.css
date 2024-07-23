@@ -2,9 +2,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
-    background-color: #ffffff;
+    background: linear-gradient(to bottom, #040248, #3a34ef);
 }
-
 
 h1, h2, h3 {
     color: #ffffff;
@@ -18,8 +17,7 @@ p {
 
 .container {
     display: flex;
-    background-color: #000000;
-    width: 100%;
+    background-color: #040248;
     height: auto;
     margin: 0 auto;
     padding: 2% 2%;
@@ -48,12 +46,17 @@ p {
 }
 
 .listaProgramas{
-    background-color: rgb(105, 105, 105);
+    background-color: rgb(131, 10, 187);
     padding: 10px 10px;
-    border: 10px solid #ccc;
+    border: 10px solid #ed57d7;
     border-radius: 5px;
     display: flex;
     margin-bottom: 10px; 
+}
+
+.listaProgramas:hover {
+    background-color:  rgb(194, 61, 172);
+
 }
 
 .programaItem {
@@ -68,3 +71,11 @@ p {
     gap: 20px;
 }
 
+a {
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+a:hover {
+    border: 2px solid;
+    border-image: linear-gradient(to top , #ffffff, #ffffff00, #ffffff00) 1;
+}
